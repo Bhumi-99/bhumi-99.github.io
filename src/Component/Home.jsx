@@ -4,7 +4,7 @@ export default function Home() {
 
   function resume() {
     window.open(
-      "https://drive.google.com/file/d/1m-5h1Is4mNkilVLdVOFL7cg8Pegx4CkL/view?usp=share_link",
+      "https://drive.google.com/file/d/1CoeUohXyB-Cfaj-yVdQ3RVCvAAXW4M1s/view?usp=share_link",
       "_blank"
     );
   }

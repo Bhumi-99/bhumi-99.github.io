@@ -31,7 +31,7 @@ export default function Projects (){
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width={'100%'} />
                     </div>
                     <div className='deployed'>
-                        <a href="https://github.com/shaifali-99/assorted-desk-4504" className='project-github-link' target='_blank'>
+                        <a href="https://github.com/bhumi-99/assorted-desk-4504" className='project-github-link' target='_blank'>
                         <Tooltip label='Github link'placement='auto' hasArrow arrowSize={10} borderRadius={'5px'}>
                         <img src="https://img.icons8.com/ios-glyphs/1x/github.png" alt="gitcosmo"/>
                         </Tooltip>
@@ -91,7 +91,7 @@ export default function Projects (){
                         <img src="https://camo.githubusercontent.com/f841126f02933a3586da04264a80d7eaf7654edf48e5e927599e02e01ddff112/68747470733a2f2f696d672e69636f6e73382e636f6d2f6f66666963656c2f31782f72656163742e706e67" alt="React" />
                     </div>
                     <div className='deployed'>
-                        <a href="https://github.com/shaifali-99/satisfying-scale-7625" className='project-github-link'target="_blank">
+                        <a href="https://github.com/bhumi-99/satisfying-scale-7625" className='project-github-link'target="_blank">
                         <Tooltip label='Github link'placement='auto' hasArrow arrowSize={10} borderRadius={'5px'}>
                         <img src="https://img.icons8.com/ios-glyphs/1x/github.png" alt="gitcosmo"/>
                         </Tooltip>
@@ -120,7 +120,7 @@ export default function Projects (){
                     <img className="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="js" />
                 </div>
                 <div className='deployed'>
-                    <a href="https://github.com/shaifali-99/zesty-whistle-6002" className='project-github-link' target="_blank">
+                    <a href="https://github.com/bhumi-99/zesty-whistle-6002" className='project-github-link' target="_blank">
                     <Tooltip label='Github link'placement='auto' hasArrow arrowSize={10} borderRadius={'5px'}>
                     <img src="https://img.icons8.com/ios-glyphs/1x/github.png" alt="gitcosmo"/>
                     </Tooltip>
@@ -138,11 +138,11 @@ export default function Projects (){
             <img src="https://cliply.co/wp-content/uploads/2020/04/422004440_CHECKMARK_3D_ICON_400px.gif" alt="" width="70px"/>
             Github Stats</h1>
             <div className='github'>
-            <GitHubCalendar username="shaifali-99" className="react-activity-calendar"/>
+            <GitHubCalendar username="bhumi-99" className="react-activity-calendar"/>
             <Stack>
-            <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=shaifali-99" alt="state2"/>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shaifali-99&layout=compact" id="github-top-langs" alt="s3"/>
-            <img src="https://github-readme-streak-stats.herokuapp.com?user=shaifali-99&border_radius=10.6" alt="state1" id="github-streak-stats"/>
+            <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=bhumi-99" alt="state2"/>
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bhumi-99&layout=compact" id="github-top-langs" alt="s3"/>
+            <img src="https://github-readme-streak-stats.herokuapp.com?user=bhumi-99&border_radius=10.6" alt="state1" id="github-streak-stats"/>
             </Stack>
             </div>
     </div>
