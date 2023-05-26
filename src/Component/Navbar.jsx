@@ -129,7 +129,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
              
             <a
               id="resume-link-1"
-              href={CV}
+              href={'https://drive.google.com/u/0/uc?id=1CoeUohXyB-Cfaj-yVdQ3RVCvAAXW4M1s&export=download'}
               download="Shaifali-Resume"
               target="_blank"
               // rel="noreferrer"

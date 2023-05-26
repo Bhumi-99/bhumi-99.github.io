@@ -4,7 +4,7 @@ export default function Home() {
 
   function resume() {
     window.open(
-      "https://drive.google.com/file/d/1CoeUohXyB-Cfaj-yVdQ3RVCvAAXW4M1s/view?usp=share_link",
+      "https://drive.google.com/file/d/1CoeUohXyB-Cfaj-yVdQ3RVCvAAXW4M1s/view?usp=sharing",
       "_blank"
     );
   }
@@ -45,7 +45,7 @@ export default function Home() {
         >
           <a
             id="resume-link-2"
-            href={CV}
+            href={'https://drive.google.com/u/0/uc?id=1CoeUohXyB-Cfaj-yVdQ3RVCvAAXW4M1s&export=download'}
             download="Shaifali-Resume"
             target="_blank"
 
