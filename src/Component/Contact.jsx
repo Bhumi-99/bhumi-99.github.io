@@ -34,14 +34,14 @@ export default function Contacts (){
           </Stack> */}
 
           <Stack align={'flex-start'} borderRadius={'10px'} padding={'0.5rem'}>
-          <Link href="https://github.com/shaifali-99" w={'full'} display={'flex'} alignItems={'center'} id="contact-github">
+          <Link href="https://github.com/bhumi-99" w={'full'} display={'flex'} alignItems={'center'} id="contact-github">
               <Image src="https://img.icons8.com/fluency/1x/github.png" alt="github" w={{base:"15%",sm:"15%",md:'17%',lg:"18%"}}/>
               <Text fontSize={{base:'17px',md:'17px',lg:'15px'}} color={'#718096'}>shaifali-99</Text>
              </Link>
           </Stack>
 
           <Stack align={'flex-start'} borderRadius={'10px'} padding={'0.5rem'}>
-          <Link href="https://www.linkedin.com/in/shaifali-610a66249/" w={'full'}  display={'flex'} alignItems={'center'} id="contact-linkedin">
+          <Link href="https://www.linkedin.com/in/bhumi-610a66249/" w={'full'}  display={'flex'} alignItems={'center'} id="contact-linkedin">
               <Image src="https://img.icons8.com/fluency/1x/linkedin-circled.png" alt="linkedin" w={{base:"15%",sm:"15%",md:'17%',lg:"18%"}}/>
               <Text fontSize={{base:'17px',md:'17px',lg:'15px'}} color={'#718096'}>Shaifali</Text>
              </Link>
