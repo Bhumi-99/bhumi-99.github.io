@@ -37,7 +37,7 @@ const LinkItems = [
 export default function SidebarWithHeader({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box id="nav-menu">
+    <Box id="nav-menu" bgColor='black'>
       <SidebarContent
         onClose={() => onClose}
         display={{ base: 'none', md: 'block' }}
@@ -56,7 +56,7 @@ export default function SidebarWithHeader({ children }) {
       </Drawer>
       {/* mobilenav */}
       <MobileNav display={{ base: 'flex', md: 'none' }} onOpen={onOpen} />
-      <Box ml={{ base: 0, md: 60 }} p="4">
+      <Box ml={{ base: 0, md: 60 }} p="4" bgColor='black'>
         {children}
       </Box>
     </Box>
@@ -75,10 +75,11 @@ const SidebarContent = ({ onClose, ...rest }) => {
   return (
     <Box
       display="block"
+      bgColor='black'
       // border={"1px solid"}
-      bg={useColorModeValue('white', 'gray.900')}
+      // bg={useColorModeValue('white', 'gray.900')}
       borderRight="1px"
-      borderRightColor={useColorModeValue('gray.200', 'gray.700')}
+      borderRightColor={useColorModeValue('gray.500', 'gray.700')}
       w={{ base: 'full', md: 60 }}
       position="fixed"
       h="full"

@@ -1,149 +1,247 @@
-import GitHubCalendar from 'react-github-calendar';
-import s from '../images/cosmo.jpg';
-import d from '../images/desk.jpg';
-import b from '../images/bigBite.jpg';
-import koovs from '../images/KOOVS.jpg';
-import {Box, Stack, Tooltip} from '@chakra-ui/react';
-export default function Projects (){
-    return <div id="projects">
-        <h1>
-            <img src="https://cliply.co/wp-content/uploads/2019/05/371905140_MEET_ROBOT_400px.gif" alt="robo" width="100px"  />
-            Projects</h1>
+import GitHubCalendar from "react-github-calendar";
+import s from "../images/cosmo.jpg";
+import d from "../images/desk.jpg";
+import b from "../images/bigBite.jpg";
+import koovs from "../images/KOOVS.jpg";
+import { Box, Heading, Image, Stack, Text, Tooltip } from "@chakra-ui/react";
+export default function Projects() {
+  const projectData = [
+    {
+      Title: "Koovs",
+      projectImg: koovs,
+      desc: "Koovs is an e-commerce fashion brand which fulfills all fashion needsin one platform. E-Commerce, Clothing & Apparel",
+      techStack: [
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        "https://image.shutterstock.com/image-vector/react-emblem-blue-atom-on-260nw-1568210053.jpg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+      ],
+      githublink: "https://github.com/officialShaifaliJ/assorted-desk-4504",
+      deployedlink: "https://img.icons8.com/ios-glyphs/1x/github.png",
+    },
 
-            <div className="project-card">
-                    <h2 className="project-title">1. Koovs</h2>
-                    <img src={koovs} alt="koovs" />
-                    <p className="project-description">
-                    Koovs is an e-commerce fashion brand which fulfills all fashion needs in one platform. E-Commerce, Clothing & Apparel
-                    </p>
-                    <div className="project-tech-stack">
-                        <p>Tech Stack :-  </p>
-                        <img className="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html" />
+    {
+      Title: " Desktime",
+      projectImg: d,
+      desc: "DeskTime is a time tracking tool with additional features for workforce management. These features can help you build a successfull team that consistently achieves its goals.",
+      techStack: [
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      ],
+      githublink: "https://github.com/palabhi017/terrific-language-9890",
+      deployedlink: "https://time-always.netlify.app/",
+    },
 
-                        <img className="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css" />
+    {
+      Title: "Blue Apron",
+      projectImg: b,
+      desc: " Blue Apron.com is meal kit service that delivers 2–4 recipes to yourdoor each week, along with all the proportioned ingredients you need to make the meals.",
+      techStack: [
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        "https://image.shutterstock.com/image-vector/react-emblem-blue-atom-on-260nw-1568210053.jpg",
+      ],
+      githublink: "https://github.com/officialShaifaliJ/satisfying-scale-7625",
+      deployedlink: "https://newbigbite.netlify.app/",
+    },
 
-                        <img className="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="js" />
+    {
+      Title: "Sephora",
+      projectImg: s,
+      desc: "Sephora is an e-commerce global beauty chain user friendly website which offers a wide range of classic cosmetic products which include every kind of skincare ,makeup ,fragrance ,body and hair care and many more you can find for yourself.",
+      techStack: [
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      ],
+      githublink: "https://github.com/officialShaifaliJ/zesty-whistle-6002",
+      deployedlink: "https://dapper-cheesecake-326981.netlify.app/",
+    },
+  ];
 
-                        <img src="https://camo.githubusercontent.com/f841126f02933a3586da04264a80d7eaf7654edf48e5e927599e02e01ddff112/68747470733a2f2f696d672e69636f6e73382e636f6d2f6f66666963656c2f31782f72656163742e706e67" alt="React" />
+  return (
+    <Box
+      id="projects"
+      mt="4rem"
+      //   border="1px solid white"
+      ml={{base:"1rem",md:"15rem",lg:"16rem",xl:"17rem"}}
+      w={{base:"100%",md:"70%",lg:"73%",xl:"80%"}}
+      display="flex"
+      flexDirection="column"
+      scrollBehavior="smooth"
+      gap="4rem"
+      //   padding="1rem"
+    >
+      <Heading
+        // className="heading-color"
+        color="rgb(49, 130, 206)"
+        fontSize={{ base: "3xl", md: "5xl" }}
+      >
+        Projects
+      </Heading>
+      <Box
+        display="grid"
+        gridTemplateColumns={{ md: "repeat(1,1fr)",
+         lg: "repeat(1,1fr)", xl: "repeat(2,1fr)" }}
+        ml={{sm:"2.2rem",md:"2rem",lg:"0.8rem",xl:"2rem"}}
+        gap={6}
+        p={{sm:"15px",md:"1px"}}
+        justifyContent="space-between"
+      >
+        {projectData.map((project, i) => {
+          return (
+            <Box
+              className="project-card"
+              color="grey"
+              //   border="1px solid lightGrey"
+              width="90%"
+              scrollBehavior="smooth"
+              borderRadius="10px"
+              p="10px"
+              boxShadow="lightgrey 0px 3px 3px 0px"
+              mt={2}
+            >
+              <Heading className="project-title" color="skyblue" as="h3">
+                {project.Title}
+              </Heading>
 
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongo" />
+              <Image
+                src={project.projectImg}
+                alt={project.Title}
+                borderRadius="5px"
+                mt={4}
+              />
 
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width={'100%'} />
-                    </div>
-                    <div className='deployed'>
-                        <a href="https://github.com/bhumi-99/assorted-desk-4504" className='project-github-link' target='_blank'>
-                        <Tooltip label='Github link'placement='auto' hasArrow arrowSize={10} borderRadius={'5px'}>
-                        <img src="https://img.icons8.com/ios-glyphs/1x/github.png" alt="gitcosmo"/>
-                        </Tooltip>
-                        </a>
-                        <a href="https://ephemeral-platypus-7df5f7.netlify.app/" className='project-deployed-link'target="_blank">
-                        <Tooltip label="Deployed link" placement='auto' hasArrow arrowSize={10} borderRadius={'5px'} bg={'rgb(49, 130, 206)'}>
-                        <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/1x/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png" alt="cosmo" className='project-deployed-link"'/>
-                        </Tooltip>
-                        </a>
-                    </div>
-            </div>
+              <Text
+                className="project-description"
+                fontSize={{base:"15px",sm:"18px"}}
+                textAlign="left"
+                mt={2}
+              >
+                {project.desc}
+              </Text>
 
+              <Box
+                className="project-tech-stack"
+                textAlign="left"
+                // display='grid'
+                mt={3}
+              >
+                <Text fontSize="15px" fontWeight="600" color="skyblue">
+                  Tech Stack{" "}
+                </Text>
+                <Box
+                  display="flex"
+                  //   border="1px solid white"
+                  width="100%"
+                  gap={2}
+                  mt={2}
+                  alignItems="center"
+                >
+                  {project.techStack.map((e, i) => {
+                    return (
+                      <Image
+                        className="skills-card-img"
+                        src={e}
+                        w={{ base: "10%", md: "5%" }}
+                        alt={`${project.Title + i}`}
+                      />
+                    );
+                  })}
+                </Box>
+              </Box>
 
-            <div className="project-card">
-                    <h2 className="project-title">2. Desktime</h2>
-                    <img src={d} alt="desk" />
-                    <p className="project-description">
-                    DeskTime is a time tracking tool with additional features for workforce management. These features can help you build a successful team that consistently achieves its goals.
-                    </p>
-                    <div className="project-tech-stack">
-                        <p>Tech Stack :-  </p>
-                        <img className="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html" />
+              <Box className="deployed" textAlign="left" mt={3}>
+                <Text fontSize="15px" fontWeight="600" color="skyblue">
+                  Deployed Links{" "}
+                </Text>
+                <Box
+                  display="flex"
+                  //   border="1px solid white"
+                  width="100%"
+                  mt={2}
+                >
+                  <a
+                    href={project.githublink}
+                    className="project-github-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Image
+                      src="https://img.icons8.com/fluency/1x/github.png"
+                      w={{ base: "50%", md: "55%" }}
+                      alt={`${project.Title + "githublink"}`}
+                    />
+                  </a>
+                  <a
+                    href={project.deployedlink}
+                    className="project-deployed-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Image
+                      src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/1x/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+                      alt="cosmo"
+                      w={{ base: "100%", md: "100%" }}
+                      className={`${project.Title + "project-deployed-link"}`}
+                    />
+                  </a>
+                </Box>
+              </Box>
+            </Box>
+          );
+        })}
+      </Box>
 
-                        <img className="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css" />
-
-                        <img className="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="js" />
-                    </div>
-                    <div className='deployed'>
-                        <a href="https://github.com/palabhi017/terrific-language-9890" className='project-github-link' target="_blank">
-                        <Tooltip label='Github link'placement='auto' hasArrow arrowSize={10} borderRadius={'5px'}>
-                        <img src="https://img.icons8.com/ios-glyphs/1x/github.png" alt="gitcosmo"/>
-                        </Tooltip>
-                        </a>
-                        <a href="https://time-always.netlify.app/" className="project-deployed-link" target="_blank">
-                        <Tooltip label='Deployed link'placement='auto' hasArrow arrowSize={10} borderRadius={'5px'} bg={'rgb(49, 130, 206)'}>
-                        <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/1x/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png" alt="cosmo" className='project-deployed-link"'/>
-                        </Tooltip>
-                        </a>
-                    </div>
-            </div>
-
-
-            <div className="project-card">
-                    <h2 className="project-title">3. Blue Apron</h2>
-                    <img src={b} alt="bigBite" />
-                    <p className="project-description">
-                        Blue Apron.com is meal kit service that delivers 2–4 recipes to your door each week, along with all the proportioned ingredients you need to make the meals.
-                    </p>
-                    <div className="project-tech-stack">
-                        <p>Tech Stack :-  </p>
-                        <img className="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html" />
-
-                        <img className="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css" />
-
-                        <img className="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="js" />
-
-                        <img src="https://camo.githubusercontent.com/f841126f02933a3586da04264a80d7eaf7654edf48e5e927599e02e01ddff112/68747470733a2f2f696d672e69636f6e73382e636f6d2f6f66666963656c2f31782f72656163742e706e67" alt="React" />
-                    </div>
-                    <div className='deployed'>
-                        <a href="https://github.com/officialShaifaliJ/satisfying-scale-7625" className='project-github-link'target="_blank">
-                        <Tooltip label='Github link'placement='auto' hasArrow arrowSize={10} borderRadius={'5px'}>
-                        <img src="https://img.icons8.com/ios-glyphs/1x/github.png" alt="gitcosmo"/>
-                        </Tooltip>
-                        </a>
-                        <a href="https://newbigbite.netlify.app/" className='project-deployed-link' target="_blank">
-                        <Tooltip label='Deployed link'placement='auto' hasArrow arrowSize={10} borderRadius={'5px'} bg={'rgb(49, 130, 206)'}>
-                        <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/1x/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png" alt="cosmo"/>
-                        </Tooltip>
-                        </a>
-                    </div>
-            </div>
-
-
-            <div className="project-card">
-                <h2 className="project-title">4. Sephora</h2>
-                <img src={s} alt="cosmo" />
-                <p className="project-description">
-                Sephora is an e-commerce global beauty chain user friendly website which offers a wide range of classic cosmetic products which include every kind of skincare ,makeup ,fragrance ,body and hair care and many more you can find for yourself.
-                </p>
-                <div className="project-tech-stack">
-                    <p>Tech Stack :-  </p>
-                    <img className="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html" />
-
-                    <img className="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css" />
-
-                    <img className="skills-card-img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="js" />
-                </div>
-                <div className='deployed'>
-                    <a href="https://github.com/officialShaifaliJ/zesty-whistle-6002" className='project-github-link' target="_blank">
-                    <Tooltip label='Github link'placement='auto' hasArrow arrowSize={10} borderRadius={'5px'}>
-                    <img src="https://img.icons8.com/ios-glyphs/1x/github.png" alt="gitcosmo"/>
-                    </Tooltip>
-                    </a>
-                    <a href="https://dapper-cheesecake-326981.netlify.app/" class="project-deployed-link" target="_blank">
-                    <Tooltip label='Deployed link'placement='auto' hasArrow arrowSize={10} borderRadius={'5px'} bg={'rgb(49, 130, 206)'}>
-                     <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/1x/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png" alt="cosmo"/>
-                     </Tooltip>
-                    </a>
-                </div>
-            </div>
-
-        
-            <h1>
-            <img src="https://cliply.co/wp-content/uploads/2020/04/422004440_CHECKMARK_3D_ICON_400px.gif" alt="" width="70px"/>
-            Github Stats</h1>
-            <div className='github'>
-            <GitHubCalendar username="bhumi-99" className="react-activity-calendar"/>
-            <Stack>
-            <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=officialShaifaliJ" alt="state2"/>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=officialShaifaliJ&layout=compact" id="github-top-langs" alt="s3"/>
-            <img src="https://github-readme-streak-stats.herokuapp.com?user=officialShaifaliJ&border_radius=10.6" alt="state1" id="github-streak-stats"/>
-            </Stack>
-            </div>
-    </div>
+      <Heading color="rgb(49, 130, 206)" fontSize={{ base: "3xl", md: "5xl" }}>
+        Github Stats
+      </Heading>
+      <Box className="github" alignItem="center">
+        <Box bgColor="white" alignItems="center" textAlign="center" w={{base:"80%",md:"80%",lg:'80%'}} m='auto' p={5} borderRadius='5px'>
+          <GitHubCalendar
+            username="officialShaifaliJ"
+            className="react-activity-calendar"
+            margin="auto"
+          />
+        </Box>
+        <Box
+          alignItem="center"
+          p="20px"
+          gap={5}
+          //   border="1px solid white"
+          textAlign="center"
+          //   w='70%'
+        >
+          <Image
+            id="github-stats-card"
+            src="https://github-readme-stats.vercel.app/api?username=officialShaifaliJ&theme=tokyonight&border_radius=10.6"
+            alt="state2"
+            mt={4}
+            w="70%"
+            m="auto"
+          />
+          <Image
+            src="https://github-readme-streak-stats.herokuapp.com?user=officialShaifaliJ&border_radius=10.6&theme=tokyonight"
+            alt="state1"
+            m="auto"
+            mt={4}
+            w="70%"
+            id="github-streak-stats"
+          />
+          <Image
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=officialShaifaliJ&layout=compact&card_width=600&theme=tokyonight&border_radius=10.6"
+            id="github-top-langs"
+            w="70%"
+            m="auto"
+            mt={4}
+            alt="s3"
+          />
+        </Box>
+      </Box>
+    </Box>
+  );
 }

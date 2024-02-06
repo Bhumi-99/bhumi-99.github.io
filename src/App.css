@@ -1,815 +1,623 @@
 .App {
-  /* text-align: center; */
+    text-align: center; 
+   background-color: rgb(8, 8, 8);
 }
-*{
+* {
   scroll-behavior: smooth;
   transition: all 0.5s;
 }
-#home{
-  /* margin-top: 2%; */
-  scroll-behavior: smooth;
-  margin-left:17rem ;
-  padding: 3rem;
-  /* border: 1px solid; */
-  width:75%;
-  display: flex;
-  gap: 3rem;
-}
-#home>div{
-  /* border: 1px solid firebrick; */
-  text-align: center;
-  height: 70%;
-  margin: auto;
-  font-weight: bold;
-}
-#home>div>p:nth-child(1){
-  display: flex;
-  font-size:4pc;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-#home>div>p:nth-child(2){
-  font-size:3.3pc;
-  color: rgb(49, 130, 206);
-  margin-bottom: 1rem;
-}
-#home>div>p:nth-child(3){
-  margin-bottom: 2rem;
-  font-size:1.7pc;
-}
-#home>img{
-  width: 35%;
-  height:35%;
-  /* border: 3px solid; */
-  align-items: center;
-  border-radius: 50%;
-}
-/* #home>img:hover{
-  background-image: url('https://media1.giphy.com/media/l36xCYlbh7gOcZDjnX/200w.webp?cid=ecf05e47zx9stlayd5vzr8wewi32dktpxwgjvgrld6vb61nv&rid=200w.webp&ct=s');
-} */
-.arrow{
-  /* position: absolute; */
+/*
+.arrow {
   width: 60px;
   margin: 0px 5px;
 }
-#about{
-  margin-top: 4rem;
-  scroll-behavior: smooth;
-  margin-left:19rem ;
-  /* border: 1px solid; */
-  width:75%;
-  display: flex;
-  flex-direction: column;
-  gap: rem;
-  padding: 1rem;
-}
-#about>h1{
-  color: rgb(49, 130, 206);
-  font-weight: bold;
-  display: flex;
-  /* border: 1px solid; */
-  font-size: 3rem;
-}
-#about>div{
-  font-size: 22px;
-  /* border: 1px solid; */
-  text-align: left;
-  padding: 1.5rem;
-  letter-spacing: 0.6px;
-  line-height: 2.3pc;
-}
-#skills{
-  margin-top: 4rem;
-  margin-left:19rem ;
-  /* border: 1px solid; */
-  width:75%;
-  scroll-behavior: smooth;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  padding: 1rem;
-}
-#skills>h1{color: rgb(49, 130, 206);
-  font-weight: bold;
-  /* border: 1px solid; */
-  display: flex;
-  text-align: center;
-  font-size: 3rem;} 
-  h1{
-   text-transform: uppercase;
+
+.heading-color{
+  text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
     rgb(49, 130, 206) 0%,
     #0c8c9c 29%,
     #44107a 29%,
     #ff1361 67%,
-    #fff800 100%
+    #6f00ff 100%
   );
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  /* color: #fff; */
-  /* background-clip: text; */
-  /* text-fill-color: transparent; */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
-  /* display: inline-block; */
-      /* font-size: 190px; */
 }
 @keyframes textclip {
   to {
     background-position: 200% center;
   }
 }
-#skills>div{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  justify-content: space-evenly;
-  gap: 2rem ;
-}
-#skills>div>div{
-  border-radius:10px ;
-  padding: 5px;
-  /* border: 1px solid green; */
-text-align: center;
-/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-  transition: all 1s;
-  font-size: 15px;
-}
-@keyframes bounce {
-  0%, 20%, 60%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
 
-  40% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
 
-  80% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-}
-#skills>div>div:hover{
-  border-bottom: 2px solid;
-  font-weight: 600;
-  cursor:pointer;
-	padding:10px 20px;
-  padding: 5px;
-  font-size: 15px;
-  transition: all 0.7s;
-  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
-  animation: bounce 1s;
-  color: rgb(49, 130, 206);
-}
 
-#skills>div>div>img{
-  width: 80px;
-  margin: auto;
-  margin-bottom: 2rem;
-}
-#projects{
-  margin-top: 4rem;
-  margin-left:19rem ;
-  /* border: 1px solid; */
-  width:75%;
-  display: flex;
-  flex-direction: column;
-  scroll-behavior: smooth;
-  gap: 4rem;
-  padding: 1rem;
-}
-#projects h1{
-  width: 100%;
-  color: rgb(49, 130, 206);
-  font-weight: bold;
-  display: flex;
-  /* border: 1px solid; */
-  font-size: 3rem;
-}
-.project-card{
-  /* border: 1px solid; */
-  margin: 1rem;
-  border-radius: 5px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
-  padding: 1rem;
-}
-.project-card>h2{
+.project-card > h2 {
   text-align: left;
   font-weight: bold;
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
-.project-card>p{
-  font-size: 18px;
+.project-tech-stack {
+  /* border: 1px solid greenyellow; 
+  display: flex;
   margin: 1rem;
-  text-align: left;
+  gap: 5px;
 }
-.project-tech-stack{
-/* border: 1px solid greenyellow; */
-display: flex;
-margin: 1rem;
-gap: 5px;
-}
-.project-tech-stack>p{
+.project-tech-stack > p {
   font-size: 1.5pc;
   font-weight: 700;
 }
-.project-tech-stack>img{
-  width: 30px;
+.project-tech-stack > img {
+ 
 }
-.deployed{
+.deployed {
   display: flex;
   gap: 1.5pc;
   margin: 1rem;
-  /* border: 1px solid; */
+  /* border: 1px solid; 
   align-items: center;
 }
-.github{
+.github {
   display: flex;
   flex-direction: column;
- align-items: center;
+  align-items: center;
   gap: 10px;
 }
-.github>img{
-  width:70%;
-  margin:1rem;
+.github > img {
+  width: 70%;
+  margin: 1rem;
 }
-#contact{
+#contact {
   margin-top: 4rem;
-  margin-left:19rem ;
+  margin-left: 19rem;
   scroll-behavior: smooth;
-  /* border: 1px solid; */
-  width:75%;
+  /* border: 1px solid; 
+  width: 75%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
 }
-#contact>h1{
+#contact > h1 {
   width: 100%;
   color: rgb(49, 130, 206);
   font-weight: bold;
   display: flex;
-  /* border: 1px solid; */
+  /* border: 1px solid; 
   font-size: 3rem;
 }
-#contact>div{
+#contact > div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-#contact>div>a>img{
-width: 40px;
+#contact > div > a > img {
+  width: 40px;
 }
-#contact>div>a>p{
-font-size: 13px;
+#contact > div > a > p {
+  font-size: 13px;
 }
-
-@media all and (min-width:870px) and (max-width: 1010px) {
-  #home{
+/* 
+@media all and (min-width: 870px) and (max-width: 1010px) {
+  #home {
     margin-top: 5%;
     scroll-behavior: smooth;
-    margin-left:28% ;
+    margin-left: 28%;
     padding: 1rem;
-    /* border: 1px solid; */
-    width:70%;
+    border: 1px solid;
+    width: 70%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     gap: 1rem;
   }
-  #home>div{
-    /* border: 1px solid firebrick; */
+  #home > div {
+     border: 1px solid firebrick; 
     text-align: center;
     height: 55%;
     margin: auto;
     font-weight: bold;
     align-items: center;
   }
-  #home>div>p:nth-child(1){
+  #home > div > p:nth-child(1) {
     display: flex;
-    font-size:2.4pc;
+    font-size: 2.4pc;
     margin-bottom: 0rem;
   }
-  #home>div>p:nth-child(2){
-    font-size:2.6pc;
+  #home > div > p:nth-child(2) {
+    font-size: 2.6pc;
     color: rgb(49, 130, 206);
     margin-bottom: 0rem;
   }
-  #home>div>p:nth-child(3){
+  #home > div > p:nth-child(3) {
     margin-bottom: 1rem;
-    font-size:1.3pc;
+    font-size: 1.3pc;
   }
-  #home>img{
-    width:38%;
-    /* height:40%; */
-    /* border: 3px solid; */
+  #home > img {
+    width: 38%;
+    /* height:40%; 
+    /* border: 3px solid; 
     align-items: center;
     border-radius: 50%;
   }
-  #about{
+  #about {
     margin-top: 3%;
     scroll-behavior: smooth;
-    margin-left:28% ;
-    /* border: 1px solid; */
-    width:70%;
+    margin-left: 28%;
+    /* border: 1px solid; 
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 0rem;
     padding: 1rem;
   }
-  #about>h1{
+  #about > h1 {
     color: rgb(49, 130, 206);
     font-weight: bold;
     display: flex;
-    /* border: 1px solid; */
+    /* border: 1px solid; 
     font-size: 3rem;
   }
-  #about>div{
+  #about > div {
     font-size: 20px;
-    /* border: 1px solid; */
+    /* border: 1px solid; 
     text-align: left;
     padding: 1.5rem;
     letter-spacing: 0.6px;
     line-height: 2.3pc;
   }
-  #skills h1{
+  /* #skills h1 {
     font-size: 3rem;
   }
-  #skills{
+  #skills {
     margin-top: 4%;
-    margin-left:28% ;
-    /* border: 1px solid; */
-    width:70%;
+    margin-left: 28%;
+    /* border: 1px solid; 
+    width: 70%;
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-  }#skills>div{
+  }
+  #skills > div {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-evenly;
-    gap: 1rem ;
+    gap: 1rem;
   }
-  #skills>div>div{
-    border-radius:10px ;
+  #skills > div > div {
+    border-radius: 10px;
     padding: 5px;
-    /* border: 1px solid green; */
-  text-align: center;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* border: 1px solid green; 
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
     transition: 1s;
-  }
-  .deployed{
+  } 
+  .deployed {
     display: flex;
     gap: 1.5pc;
     margin-top: 1rem;
     margin-left: 0%;
-    /* border: 1px solid; */
+    /* border: 1px solid; 
     align-items: center;
   }
-  #skills>div>div>img{
+  #skills > div > div > img {
     width: 80px;
     margin: auto;
     margin-bottom: 2rem;
   }
-  .project-tech-stack>p{
+  .project-tech-stack > p {
     font-size: 1.3pc;
     font-weight: 700;
   }
-  .project-tech-stack{
-    /* border: 1px solid greenyellow; */
+  .project-tech-stack {
+    /* border: 1px solid greenyellow; 
     display: flex;
     margin-top: 0.5rem;
     margin-left: 0%;
     gap: 5px;
-    }
-  #projects{
+  }
+  #projects {
     margin-top: 4rem;
-    margin-left:28% ;
-    /* border: 1px solid; */
-    width:70%;
+    margin-left: 28%;
+    /* border: 1px solid; 
+    width: 70%;
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
     gap: 3rem;
     padding: 1rem;
   }
-  #projects h1{
+  #projects h1 {
     width: 100%;
     color: rgb(49, 130, 206);
     font-weight: bold;
     display: flex;
-    /* border: 1px solid; */
+    /* border: 1px solid; 
     font-size: 3rem;
   }
-  .project-card{
-    /* border: 1px solid; */
-    margin:auto;
+  .project-card {
+    /* border: 1px solid; 
+    margin: auto;
     border-radius: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
     padding: 1rem;
   }
-  .project-card>p{
+  .project-card > p {
     font-size: 17px;
     margin: 0.3rem;
     text-align: left;
   }
-  #contact{
+  #contact {
     margin-top: 4rem;
-    margin-left:28% ;
+    margin-left: 28%;
     scroll-behavior: smooth;
-    /* border: 1px solid; */
-    width:70%;
+    /* border: 1px solid; 
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 4rem;
     padding: 1rem;
   }
-  #contact>h1{
+  #contact > h1 {
     width: 100%;
     color: rgb(49, 130, 206);
     font-weight: bold;
     display: flex;
-    /* border: 1px solid; */
+    /* border: 1px solid; 
     font-size: 3rem;
   }
-  #contact>div{
+  #contact > div {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
-  #contact>div>a>img{
-  width: 35px;
+  #contact > div > a > img {
+    width: 35px;
   }
-  #contact>div>a>p{
-  font-size: 13px;
-  } 
+  #contact > div > a > p {
+    font-size: 13px;
+  }
 }
-@media all and (min-width:759px) and (max-width: 871px) {
-  #home{
+@media all and (min-width: 759px) and (max-width: 871px) {
+  #home {
     margin-top: 5%;
     scroll-behavior: smooth;
-    margin-left:32% ;
+    margin-left: 32%;
     padding: 1rem;
-    /* border: 1px solid; */
-    width:70%;
+    /* border: 1px solid; 
+    width: 70%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     gap: 1rem;
   }
-  #home>div{
-    /* border: 1px solid firebrick; */
+  #home > div {
+    /* border: 1px solid firebrick; 
     text-align: center;
     height: 55%;
     margin: auto;
     font-weight: bold;
     align-items: center;
   }
-  #home>div>p:nth-child(1){
+  #home > div > p:nth-child(1) {
     display: flex;
-    font-size:2.4pc;
+    font-size: 2.4pc;
     margin-bottom: 0rem;
   }
-  #home>div>p:nth-child(2){
-    font-size:2.6pc;
+  #home > div > p:nth-child(2) {
+    font-size: 2.6pc;
     color: rgb(49, 130, 206);
     margin-bottom: 0rem;
   }
-  #home>div>p:nth-child(3){
+  #home > div > p:nth-child(3) {
     margin-bottom: 1rem;
-    font-size:1.3pc;
+    font-size: 1.3pc;
   }
-  #home>img{
-    width:40%;
-    /* height:40%; */
-    /* border: 3px solid; */
+  #home > img {
+    width: 40%;
+    /* height:40%; 
+    /* border: 3px solid; 
     align-items: center;
     border-radius: 50%;
   }
-  #about{
+  #about {
     margin-top: 3%;
     scroll-behavior: smooth;
-    margin-left:30% ;
-    /* border: 1px solid; */
-    width:70%;
+    margin-left: 30%;
+    /* border: 1px solid; 
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 0rem;
     padding: 1rem;
   }
-  #skills{
+  #skills {
     margin-top: 4%;
-    margin-left:30% ;
-    /* border: 1px solid; */
-    width:70%;
+    margin-left: 30%;
+    /* border: 1px solid; 
+    width: 70%;
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
   }
-  #skills>div{
+  #skills > div {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
-    gap: 1rem ;
+    gap: 1rem;
   }
-  #skills>div>div{
-    border-radius:10px ;
+  #skills > div > div {
+    border-radius: 10px;
     padding: 5px;
-    /* border: 1px solid green; */
-  text-align: center;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* border: 1px solid green; 
+    text-align: center;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     transition: 1s;
   }
-  #skills h1{
+  #skills h1 {
     font-size: 3rem;
   }
-  #skills>div>div>img{
+  #skills > div > div > img {
     width: 80px;
     margin: auto;
     margin-bottom: 2rem;
   }
-  #projects{
+  #projects {
     margin-top: 4rem;
-    margin-left:30% ;
-    /* border: 1px solid; */
-    width:70%;
+    margin-left: 30%;
+    /* border: 1px solid;
+    width: 70%;
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
     gap: 3rem;
     padding: 1rem;
   }
-  
-  #projects h1{
+
+  #projects h1 {
     width: 100%;
     color: rgb(49, 130, 206);
     font-weight: bold;
     display: flex;
-    /* border: 1px solid; */
+    /* border: 1px solid; 
     font-size: 3rem;
   }
-  .project-tech-stack{
+  .project-tech-stack {
     margin: 0%;
   }
-  .project-tech-stack>p{
+  .project-tech-stack > p {
     margin-left: 0.3rem;
     font-size: 17px;
   }
-  .project-card{
-    /* border: 1px solid; */
-    margin:auto;
+  .project-card {
+    /* border: 1px solid; 
+    margin: auto;
     width: 100%;
     border-radius: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
     padding: 1rem;
   }
-  .project-card>p{
+  .project-card > p {
     font-size: 17px;
     margin: 0.3rem;
     text-align: left;
   }
-  #contact h1{
+  #contact h1 {
     font-size: 3rem;
   }
-  #contact{
+  #contact {
     margin-top: 4rem;
-    margin-left:28% ;
+    margin-left: 28%;
     scroll-behavior: smooth;
-    /* border: 1px solid; */
-    width:70%;
+    /* border: 1px solid; 
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 4rem;
     padding: 1rem;
   }
 }
-@media all and (min-width:200px) and (max-width: 758px) {
-  #home{
+@media all and (min-width: 200px) and (max-width: 758px) {
+  #home {
     margin-top: 5%;
     scroll-behavior: smooth;
-    /* margin-left:0% ; */
+    /* margin-left:0% ; 
     margin: auto;
     padding: 1rem;
-    /* border: 1px solid; */
-    width:100%;
+    /* border: 1px solid; 
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
     gap: 1rem;
   }
-  #home>div{
-    /* border: 1px solid firebrick; */
+  #home > div {
+    /* border: 1px solid firebrick; 
     text-align: center;
     height: 55%;
     margin: auto;
     font-weight: bold;
     align-items: center;
   }
-  #home>div>p:nth-child(1){
+  #home > div > p:nth-child(1) {
     display: flex;
-    font-size:2pc;
+    font-size: 2pc;
     margin-bottom: 0rem;
   }
-  #home>div>p:nth-child(2){
-    font-size:2.3pc;
+  #home > div > p:nth-child(2) {
+    font-size: 2.3pc;
     color: rgb(49, 130, 206);
     margin-bottom: 0rem;
   }
-  #home>div>p:nth-child(3){
+  #home > div > p:nth-child(3) {
     margin-bottom: 1rem;
-    font-size:1pc;
+    font-size: 1pc;
   }
-  #home>img{
-    width:40%;
-    /* height:40%; */
-    /* border: 3px solid; */
+  #home > img {
+    width: 40%;
+    /* height:40%; 
+    /* border: 3px solid; 
     align-items: center;
     border-radius: 50%;
   }
-  #about{
+  #about {
     scroll-behavior: smooth;
-    margin-left:0% ;
+    margin-left: 0%;
     margin: auto;
     margin-top: 5%;
-    /* border: 1px solid; */
-    width:100%;
+    /* border: 1px solid; 
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 0rem;
     padding: 0rem;
   }
-  #about>h1{
+  #about > h1 {
     color: rgb(49, 130, 206);
     font-weight: bold;
     display: flex;
-    /* border: 1px solid; */
+    /* border: 1px solid; 
     font-size: 2rem;
     align-items: center;
   }
-  #about>div{
+  #about > div {
     font-size: 18px;
-    /* border: 1px solid; */
+    /* border: 1px solid; 
     text-align: left;
     padding: 1rem;
     letter-spacing: 0.6px;
     line-height: 2pc;
   }
-  #skills{
-    margin-left:0% ;
-    margin:auto;
+  #skills {
+    margin-left: 0%;
+    margin: auto;
     margin-top: 5%;
-    /* border: 1px solid; */
-    width:100%;
+    /* border: 1px solid; 
+    width: 100%;
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
   }
-  #skills>div{
+  #skills > div {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
-    gap: 1rem ;
+    gap: 1rem;
   }
-  #skills>div>div{
-    border-radius:10px ;
+  #skills > div > div {
+    border-radius: 10px;
     padding: 5px;
-    /* border: 1px solid green; */
-  text-align: center;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* border: 1px solid green; 
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
     transition: 1s;
   }
-  #skills>h1{
+  #skills > h1 {
     font-size: 2rem;
   }
-  #skills>div>div>img{
+  #skills > div > div > img {
     width: 60px;
     margin: auto;
     margin-bottom: 2rem;
   }
-  #projects{
-    margin: auto;
-    margin-top: 4rem;
-    margin-left:0% ;
-    /* border: 1px solid; */
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    scroll-behavior: smooth;
-    gap: 3rem;
-    padding: 1rem;
-  }
-  
-  #projects h1{
-    width: 100%;
-    color: rgb(49, 130, 206);
-    font-weight: bold;
-    display: flex;
-    /* border: 1px solid; */
-    font-size: 2rem;
-    align-items: center;
-  }
-  .project-card{
-    /* border: 1px solid; */
-    margin:auto;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
-    padding: 1rem;
-  }
-  .project-card>p{
+ 
+  .project-card > p {
     font-size: 16px;
-    margin: 0.3rem;
+    /* margin: 0.3rem; 
     text-align: left;
   }
-  
-.project-tech-stack{
-  border: 1px solid greenyellow;
-  display: flex;
-  margin-top: 0.5rem;
-  margin-left: 0%;
-  gap: 5px;
+
+  .project-tech-stack {
+    /* border: 1px solid greenyellow; 
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-left: 0%;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    /* height: 20px; 
   }
-  .project-tech-stack>p{
+  .project-tech-stack > p {
     font-size: 15px;
   }
-  .project-tech-stack>img{
+  .project-tech-stack > img {
     width: 25px;
   }
-  .deployed{
+  .deployed {
     display: flex;
     gap: 1.2pc;
     margin-top: 0rem;
     margin-left: 0%;
-    border: 1px solid;
+    /* border: 1px solid; 
     align-items: center;
   }
-  .github{
+  .github {
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
     gap: 10px;
   }
-  .github>img{
-    width:70%;
-    margin:1rem;
+  .github > img {
+    width: 70%;
+    margin: 1rem;
   }
-  #contact>h1{
+  #contact > h1 {
     width: 100%;
     color: rgb(49, 130, 206);
     font-weight: bold;
     display: flex;
-    /* border: 1px solid; */
+    /* border: 1px solid; 
     font-size: 2rem;
     align-items: center;
   }
-  #contact>div{
+  #contact > div {
     display: flex;
-    /* border: 1px solid; */
+    /* border: 1px solid; 
     flex-direction: column;
     align-items: left;
   }
-  #contact>div>a{
+  #contact > div > a {
     display: flex;
-    /* border: 1px solid; */
+    /* border: 1px solid; 
     justify-content: space-evenly;
     align-items: left;
   }
-  #contact>div>a>img{
-  width: 35px;
+  #contact > div > a > img {
+    width: 35px;
   }
-  #contact>div>a>p{
-  font-size: 13px;
+  #contact > div > a > p {
+    font-size: 13px;
   }
-  
-  #contact{
+
+  #contact {
     margin: auto;
     margin-top: 4rem;
-    margin-left:0% ;
+    margin-left: 0%;
     scroll-behavior: smooth;
-    /* border: 1px solid; */
-    width:100%;
+    /* border: 1px solid; 
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 0.3rem;
   }
-}
+  }*/
