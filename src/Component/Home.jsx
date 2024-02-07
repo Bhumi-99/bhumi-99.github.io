@@ -1,9 +1,10 @@
-import { Button, Tooltip, Text, Image, Box } from "@chakra-ui/react";
-import CV from "../images/CV.pdf";
+import { Button, Text, Image, Box } from "@chakra-ui/react";
+// import CV from "../images/CV.pdf";
 export default function Home() {
   function resume() {
     window.open(
-      "https://drive.google.com/file/d/1CoeUohXyB-Cfaj-yVdQ3RVCvAAXW4M1s/view?usp=sharing",
+      "https://drive.google.com/file/d/1CoeUohXyB-Cfaj-yVdQ3RVCvAAXW4M1s/view"
+      ,
       "_blank"
     );
   }
@@ -12,17 +13,18 @@ export default function Home() {
     <Box
       id="home"
       scrollBehavior="smooth"
-      ml={{base:"1px",md:"15rem",lg:"15rem",xl:"17rem"}}
-      p={{base:"1rem",sm:"3rem"}}
+      ml={{ base: "1px", md: "15rem", lg: "15rem", xl: "17rem" }}
+      p={{ base: "1rem", sm: "3rem" }}
+      pt={{ base: "4rem", sm:"4rem",md: "" }}
       // border=" 1px solid white"
-      w={{base:"100%",md:"75%",lg:"70%",xl:"80%"}}
+      w={{ base: "100%", md: "75%", lg: "70%", xl: "75%" }}
       display="flex"
       justifyContent="space-between"
-      flexDirection={{base:"column-reverse",lg:"row"}}
+      flexDirection={{ base: "column-reverse", lg: "row" }}
       gap="3rem"
     >
       <Box
-        textAlign={{base:"center",lg:"left"}}
+        textAlign={{ base: "center", lg: "left" }}
         alignItems="center"
         justifyContent="center"
         // border=" 1px solid white"
@@ -32,11 +34,11 @@ export default function Home() {
           color="white"
           display="flex"
           // border=" 1px solid white"
-          fontSize={{base:"3pc",md:"4pc"}}
+          fontSize={{ base: "3pc", md: "4pc" }}
           alignItems="center"
-          textAlign={{base:"center"}}
-          w={{base:"75%",sm:"50%",md:"55%",lg:"100%"}}
-          m='auto'
+          textAlign={{ base: "center" }}
+          w={{ base: "75%", sm: "50%", md: "55%", lg: "100%" }}
+          m="auto"
         >
           Hello
           <Image
@@ -49,18 +51,19 @@ export default function Home() {
         <Text
           color="rgb(49, 130, 206)"
           id="user-detail-name"
-          w='100%'
+          w="100%"
           // border=" 1px solid white"
-          fontSize={{base:"2pc",md:"3pc"}}
+          fontSize={{ base: "2pc", md: "3pc" }}
           alignItems="center"
           mb="1rem"
         >
           I Am Shaifali
         </Text>
-        <Text pl={{base:"5px",md:""}} 
+        <Text
+          pl={{ base: "5px", md: "" }}
           // border=" 1px solid white"
-          m='auto'
-          w={{base:"85%",lg:"100%"}}
+          m="auto"
+          w={{ base: "85%", lg: "100%" }}
         >
           <a href="https://git.io/typing-svg">
             <Image
@@ -71,51 +74,54 @@ export default function Home() {
         </Text>
         <Box
           border="0px solid white"
-          textAlign={{base:"center", lg:"left"}}
+          textAlign={{ base: "center", lg: "left" }}
           mb="2rem"
           fontSize="1.7pc"
         >
-          <Button
-            id="resume-button-2"
-            onClick={resume}
-            borderRadius="lg"
-            size="md"
-            role="group"
-            cursor="pointer"
-            fontSize="15px"
-            bg="blue.500"
-            color="white"
-            rounded={"10px"}
-            boxShadow={
-              "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
-            }
-            _hover={{
-              bg: "blue.100",
-              color: "blue.500",
-              border: "1px",
-            }}
-          >
-            <a
+           <a
               id="resume-link-2"
               href={
                 "https://drive.google.com/u/0/uc?id=1CoeUohXyB-Cfaj-yVdQ3RVCvAAXW4M1s&export=download"
               }
-              download="Shaifali-Resume"
+              download="Shaifali.-Resume"
               target="_blank"
+              rel='noopener noreferrer'
             >
+          <Button
+            id="resume-button-2"
+            onClick={(e) => {
+              e.preventDefault(); // Prevent the default action of the link click
+              resume();
+            }}
+            borderRadius="lg"
+            size="md"
+            cursor="pointer"
+            bg="blue.500"
+            color="rgb(4, 4, 54)"
+            fontSize="19px"
+            fontWeight="400"
+            rounded={"10px"}
+            boxShadow={
+              "0px 1px 25px -5px rgb(66 153 225 / 30%), 0 6px 6px -5px rgb(66 153 225 / 43%)"
+            }
+            _hover={{
+              bg: "blue.300",
+            }}
+          >
+           
               Resume
-            </a>
           </Button>
+            </a>
         </Box>
         {/* </Tooltip> */}
       </Box>
       <Image
-        className="home-img"
+        className="home-img heading-color"
         src="https://avatars.githubusercontent.com/u/112679991"
         alt="avatar"
-        width={{base:"65%",sm:"40%",md:" 35%"}}
-        height=" 35%" 
-        m='auto'
+        width={{ base: "65%", sm: "40%", md: " 35%" }}
+        height=" 35%"
+        m="auto"
         alignItems=" center"
         borderRadius=" 50%"
       />

@@ -8,7 +8,7 @@ export default function About() {
       mt="4rem"
       scroll-behavior="smooth"
       ml={{ base: "1px", md: "15rem",lg:"17rem",xl:"19rem"}}
-      w={{ base: "100%",md:"70%", lg: "75%",xl:"80%" }}
+      w={{ base: "100%",md:"70%", lg: "75%",xl:"75%" }}
     >
       <Heading
         // className="heading-color"

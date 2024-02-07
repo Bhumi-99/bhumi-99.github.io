@@ -3,7 +3,7 @@ import s from "../images/cosmo.jpg";
 import d from "../images/desk.jpg";
 import b from "../images/bigBite.jpg";
 import koovs from "../images/KOOVS.jpg";
-import { Box, Heading, Image, Stack, Text, Tooltip } from "@chakra-ui/react";
+import { Box, Heading, Image, Text } from "@chakra-ui/react";
 export default function Projects() {
   const projectData = [
     {
@@ -11,15 +11,21 @@ export default function Projects() {
       projectImg: koovs,
       desc: "Koovs is an e-commerce fashion brand which fulfills all fashion needsin one platform. E-Commerce, Clothing & Apparel",
       techStack: [
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-        "https://image.shutterstock.com/image-vector/react-emblem-blue-atom-on-260nw-1568210053.jpg",
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        // "https://image.shutterstock.com/image-vector/react-emblem-blue-atom-on-260nw-1568210053.jpg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "mongodb",
+        "express",
       ],
       githublink: "https://github.com/officialShaifaliJ/assorted-desk-4504",
-      deployedlink: "https://img.icons8.com/ios-glyphs/1x/github.png",
+      deployedlink: "https://ephemeral-platypus-7df5f7.netlify.app/",
     },
 
     {
@@ -27,9 +33,12 @@ export default function Projects() {
       projectImg: d,
       desc: "DeskTime is a time tracking tool with additional features for workforce management. These features can help you build a successfull team that consistently achieves its goals.",
       techStack: [
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        "HTML",
+        "CSS",
+        "Javascript",
       ],
       githublink: "https://github.com/palabhi017/terrific-language-9890",
       deployedlink: "https://time-always.netlify.app/",
@@ -40,10 +49,14 @@ export default function Projects() {
       projectImg: b,
       desc: " Blue Apron.com is meal kit service that delivers 2–4 recipes to yourdoor each week, along with all the proportioned ingredients you need to make the meals.",
       techStack: [
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-        "https://image.shutterstock.com/image-vector/react-emblem-blue-atom-on-260nw-1568210053.jpg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        // "https://image.shutterstock.com/image-vector/react-emblem-blue-atom-on-260nw-1568210053.jpg",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
       ],
       githublink: "https://github.com/officialShaifaliJ/satisfying-scale-7625",
       deployedlink: "https://newbigbite.netlify.app/",
@@ -54,9 +67,12 @@ export default function Projects() {
       projectImg: s,
       desc: "Sephora is an e-commerce global beauty chain user friendly website which offers a wide range of classic cosmetic products which include every kind of skincare ,makeup ,fragrance ,body and hair care and many more you can find for yourself.",
       techStack: [
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+        // "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        "HTML",
+        "CSS",
+        "Javascript",
       ],
       githublink: "https://github.com/officialShaifaliJ/zesty-whistle-6002",
       deployedlink: "https://dapper-cheesecake-326981.netlify.app/",
@@ -68,8 +84,8 @@ export default function Projects() {
       id="projects"
       mt="4rem"
       //   border="1px solid white"
-      ml={{base:"1rem",md:"15rem",lg:"16rem",xl:"17rem"}}
-      w={{base:"100%",md:"70%",lg:"73%",xl:"80%"}}
+      ml={{ base: "1rem", md: "15rem", lg: "16rem", xl: "17rem" }}
+      w={{ base: "100%", md: "70%", lg: "73%", xl: "80%" }}
       display="flex"
       flexDirection="column"
       scrollBehavior="smooth"
@@ -85,11 +101,14 @@ export default function Projects() {
       </Heading>
       <Box
         display="grid"
-        gridTemplateColumns={{ md: "repeat(1,1fr)",
-         lg: "repeat(1,1fr)", xl: "repeat(2,1fr)" }}
-        ml={{sm:"2.2rem",md:"2rem",lg:"0.8rem",xl:"2rem"}}
+        gridTemplateColumns={{
+          md: "repeat(1,1fr)",
+          lg: "repeat(1,1fr)",
+          xl: "repeat(2,1fr)",
+        }}
+        ml={{ sm: "2.2rem", md: "2rem", lg: "0.8rem", xl: "2rem" }}
         gap={6}
-        p={{sm:"15px",md:"1px"}}
+        p={{ sm: "15px", md: "1px" }}
         justifyContent="space-between"
       >
         {projectData.map((project, i) => {
@@ -116,16 +135,46 @@ export default function Projects() {
                 mt={4}
               />
 
+              <Box
+                display="flex"
+                flexWrap="wrap"
+                //   border="1px solid white"
+                width="100%"
+                gap={2}
+                my={3}
+                alignItems="center"
+              >
+                {project.techStack.map((e, i) => {
+                  return (
+                    // <Image
+                    //   className="skills-card-img"
+                    //   src={e}
+                    //   w={{ base: "10%", md: "5%" }}
+                    //   alt={`${project.Title + i}`}
+                    // />
+                    <Text
+                      fontSize="5px"
+                      px={2}
+                      borderRadius={"20px"}
+                      bgColor="skyblue"
+                      color="rgb(4, 4, 54)"
+                    >
+                      {e}
+                    </Text>
+                  );
+                })}
+              </Box>
+
               <Text
                 className="project-description"
-                fontSize={{base:"15px",sm:"18px"}}
+                fontSize={{ base: "15px", sm: "18px" }}
                 textAlign="left"
                 mt={2}
               >
                 {project.desc}
               </Text>
 
-              <Box
+              {/* <Box
                 className="project-tech-stack"
                 textAlign="left"
                 // display='grid'
@@ -134,31 +183,13 @@ export default function Projects() {
                 <Text fontSize="15px" fontWeight="600" color="skyblue">
                   Tech Stack{" "}
                 </Text>
-                <Box
-                  display="flex"
-                  //   border="1px solid white"
-                  width="100%"
-                  gap={2}
-                  mt={2}
-                  alignItems="center"
-                >
-                  {project.techStack.map((e, i) => {
-                    return (
-                      <Image
-                        className="skills-card-img"
-                        src={e}
-                        w={{ base: "10%", md: "5%" }}
-                        alt={`${project.Title + i}`}
-                      />
-                    );
-                  })}
-                </Box>
-              </Box>
+                
+              </Box> */}
 
-              <Box className="deployed" textAlign="left" mt={3}>
-                <Text fontSize="15px" fontWeight="600" color="skyblue">
+              <Box className="deployed" textAlign="left" my={3}>
+                {/* <Text fontSize="15px" fontWeight="600" color="skyblue">
                   Deployed Links{" "}
-                </Text>
+                </Text> */}
                 <Box
                   display="flex"
                   //   border="1px solid white"
@@ -201,7 +232,15 @@ export default function Projects() {
         Github Stats
       </Heading>
       <Box className="github" alignItem="center">
-        <Box bgColor="white" alignItems="center" textAlign="center" w={{base:"80%",md:"80%",lg:'80%'}} m='auto' p={5} borderRadius='5px'>
+        <Box
+          bgColor="white"
+          alignItems="center"
+          textAlign="center"
+          w={{ base: "80%", md: "80%", lg: "80%" }}
+          m="auto"
+          p={5}
+          borderRadius="5px"
+        >
           <GitHubCalendar
             username="officialShaifaliJ"
             className="react-activity-calendar"
