@@ -14,7 +14,6 @@ import {
   DrawerContent,
   Text,
   useDisclosure,
-  Image,
 } from "@chakra-ui/react";
 import {
   FiHome,
@@ -124,42 +123,38 @@ const SidebarContent = ({ onClose, ...rest }) => {
         </NavItem>
       ))}
       <Flex>
-        <Link
-          id="resume-link-1"
-          href="https://drive.google.com/u/0/uc?id=1CoeUohXyB-Cfaj-yVdQ3RVCvAAXW4M1s&export=download"
-          download="Shaifali-Resume"
-          rel="noreferrer"
-          target="_blank"
-          fontSize="17px"
+        <Button
+          id="resume-button-1"
+          className="nav-link resume"
+          onClick={() => {
+            resume();
+            onClose();
+          }}
+          align={"center"}
+          pr={{ base: "62%", sm: "75%", md: "40%", lg: "42%" }}
+          mx="5"
+          py="6"
+          pl="6"
+          borderRadius="lg"
+          cursor="pointer"
+          marginTop="2rem"
+          color="rgb(4, 4, 54)"
+          rounded="10px"
+          bg="blue.500"
+          fontSize="19px"
+          fontWeight="400"
+          boxShadow={
+            "0px 1px 25px -5px rgb(66 153 225 / 30%), 0 7px 7px -5px rgb(66 153 225 / 43%)"
+          }
+          _hover={{
+            bg: "blue.200",
+          }}
         >
-          <Button
-            id="resume-button-1"
-            className="nav-link resume"
-            onClick={(e) => {
-              e.preventDefault();
-              resume();
-              onClose();
-            }}
-            align={"center"}
-            pr={{ base: "62%", sm: "75%", md: "40%", lg: "42%" }}
-            mx="5"
-            py="6"
-            pl="6"
-            borderRadius="lg"
-            //  role="group"
-            cursor="pointer"
-            marginTop="2rem"
-            color="rgb(4, 4, 54)"
-            rounded="10px"
-            bg="blue.500"
-            fontSize="19px"
-            fontWeight="400"
-            boxShadow={
-              "0px 1px 25px -5px rgb(66 153 225 / 30%), 0 7px 7px -5px rgb(66 153 225 / 43%)"
-            }
-            _hover={{
-              bg: "blue.200",
-            }}
+          <Link
+            id="resume-link-1"
+            href={"Shaifali.-Resume.pdf"}
+            download="Shaifali.-Resume.pdf"
+            fontSize="17px"
           >
             <Icon
               mr="4"
@@ -170,8 +165,8 @@ const SidebarContent = ({ onClose, ...rest }) => {
               as={BsDownload}
             />{" "}
             Resume
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       </Flex>
       {/* </Flex> */}
     </Box>
@@ -228,7 +223,7 @@ const NavItem = ({ icon, className, onClose, to, children, ...rest }) => {
 const MobileNav = ({ onOpen, ...rest }) => {
   return (
     <Flex
-      w={{ base: "98%", sm: "100%" }}
+      w={{ base: "100%", sm: "100%" }}
       ml={{ base: 0, md: 60 }}
       px={{ base: 4, md: 24 }}
       py={"1rem"}

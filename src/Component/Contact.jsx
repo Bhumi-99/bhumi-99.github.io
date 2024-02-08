@@ -146,7 +146,7 @@ export default function Contacts() {
             </Stack>
           </SimpleGrid>
         </Container>
-        <Text color='lightgrey' m='auto' pb='3'>© 2024by Shaifali</Text>
+        <Text color='lightgrey' m='auto' pb='3'>Shaifali,© Copyright 2024. All Rights reserved. </Text>
 
       </Box>
       {/* <Box h="30px" bg='gray.50' textAlign='center'>

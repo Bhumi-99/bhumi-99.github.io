@@ -1,4 +1,3 @@
-import GitHubCalendar from "react-github-calendar";
 import s from "../images/cosmo.jpg";
 import d from "../images/desk.jpg";
 import b from "../images/bigBite.jpg";
@@ -84,7 +83,7 @@ export default function Projects() {
       id="projects"
       mt="4rem"
       //   border="1px solid white"
-      ml={{ base: "1rem", md: "15rem", lg: "16rem", xl: "17rem" }}
+      ml={{ base: "1rem",sm:"0.1rem", md: "16.5rem", lg: "16rem", xl: "17rem" }}
       w={{ base: "100%", md: "70%", lg: "73%", xl: "80%" }}
       display="flex"
       flexDirection="column"
@@ -174,22 +173,7 @@ export default function Projects() {
                 {project.desc}
               </Text>
 
-              {/* <Box
-                className="project-tech-stack"
-                textAlign="left"
-                // display='grid'
-                mt={3}
-              >
-                <Text fontSize="15px" fontWeight="600" color="skyblue">
-                  Tech Stack{" "}
-                </Text>
-                
-              </Box> */}
-
               <Box className="deployed" textAlign="left" my={3}>
-                {/* <Text fontSize="15px" fontWeight="600" color="skyblue">
-                  Deployed Links{" "}
-                </Text> */}
                 <Box
                   display="flex"
                   //   border="1px solid white"
@@ -228,59 +212,7 @@ export default function Projects() {
         })}
       </Box>
 
-      <Heading color="rgb(49, 130, 206)" fontSize={{ base: "3xl", md: "5xl" }}>
-        Github Stats
-      </Heading>
-      <Box className="github" alignItem="center">
-        <Box
-          bgColor="white"
-          alignItems="center"
-          textAlign="center"
-          w={{ base: "80%", md: "80%", lg: "80%" }}
-          m="auto"
-          p={5}
-          borderRadius="5px"
-        >
-          <GitHubCalendar
-            username="officialShaifaliJ"
-            className="react-activity-calendar"
-            margin="auto"
-          />
-        </Box>
-        <Box
-          alignItem="center"
-          p="20px"
-          gap={5}
-          //   border="1px solid white"
-          textAlign="center"
-          //   w='70%'
-        >
-          <Image
-            id="github-stats-card"
-            src="https://github-readme-stats.vercel.app/api?username=officialShaifaliJ&theme=tokyonight&border_radius=10.6"
-            alt="state2"
-            mt={4}
-            w="70%"
-            m="auto"
-          />
-          <Image
-            src="https://github-readme-streak-stats.herokuapp.com?user=officialShaifaliJ&border_radius=10.6&theme=tokyonight"
-            alt="state1"
-            m="auto"
-            mt={4}
-            w="70%"
-            id="github-streak-stats"
-          />
-          <Image
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=officialShaifaliJ&layout=compact&card_width=600&theme=tokyonight&border_radius=10.6"
-            id="github-top-langs"
-            w="70%"
-            m="auto"
-            mt={4}
-            alt="s3"
-          />
-        </Box>
-      </Box>
+     
     </Box>
   );
 }

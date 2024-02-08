@@ -1,13 +1,11 @@
 import { Button, Text, Image, Box } from "@chakra-ui/react";
-// import CV from "../images/CV.pdf";
+
 export default function Home() {
-  function resume() {
-    window.open(
-      "https://drive.google.com/file/d/1CoeUohXyB-Cfaj-yVdQ3RVCvAAXW4M1s/view"
-      ,
-      "_blank"
-    );
-  }
+  // function resume() {
+  //   window.open(
+  //     "https://drive.google.com/file/d/1CoeUohXyB-Cfaj-yVdQ3RVCvAAXW4M1s/view?usp=sharing"
+  //   );
+  // }
 
   return (
     <Box
@@ -15,7 +13,7 @@ export default function Home() {
       scrollBehavior="smooth"
       ml={{ base: "1px", md: "15rem", lg: "15rem", xl: "17rem" }}
       p={{ base: "1rem", sm: "3rem" }}
-      pt={{ base: "4rem", sm:"4rem",md: "" }}
+      pt={{ base: "4rem", sm: "4rem", md: "" }}
       // border=" 1px solid white"
       w={{ base: "100%", md: "75%", lg: "70%", xl: "75%" }}
       display="flex"
@@ -78,21 +76,15 @@ export default function Home() {
           mb="2rem"
           fontSize="1.7pc"
         >
-           <a
-              id="resume-link-2"
-              href={
-                "https://drive.google.com/u/0/uc?id=1CoeUohXyB-Cfaj-yVdQ3RVCvAAXW4M1s&export=download"
-              }
-              download="Shaifali.-Resume"
-              target="_blank"
-              rel='noopener noreferrer'
-            >
           <Button
             id="resume-button-2"
-            onClick={(e) => {
-              e.preventDefault(); // Prevent the default action of the link click
-              resume();
+            onClick={() => {
+              window.open(
+                "https://drive.google.com/file/d/1CoeUohXyB-Cfaj-yVdQ3RVCvAAXW4M1s/view?usp=sharing",
+                "_blank"
+              );
             }}
+            // download="Shaifali.-Resume.pdf"
             borderRadius="lg"
             size="md"
             cursor="pointer"
@@ -101,6 +93,7 @@ export default function Home() {
             fontSize="19px"
             fontWeight="400"
             rounded={"10px"}
+            position='revert'
             boxShadow={
               "0px 1px 25px -5px rgb(66 153 225 / 30%), 0 6px 6px -5px rgb(66 153 225 / 43%)"
             }
@@ -108,10 +101,14 @@ export default function Home() {
               bg: "blue.300",
             }}
           >
-           
+            <a
+              id="resume-link-2"
+              href={"Shaifali.-Resume.pdf"}
+              download="Shaifali.-Resume.pdf"
+            >
               Resume
-          </Button>
             </a>
+          </Button>
         </Box>
         {/* </Tooltip> */}
       </Box>

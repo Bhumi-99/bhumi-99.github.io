@@ -52,8 +52,8 @@ export default function Skills() {
       id="skills"
       mt="4rem"
       scroll-behavior="smooth"
-      ml={{ base: "1px", md: "12rem", lg: "13rem", xl: "15rem" }}
-      w={{ base: "100%", md: "80%",lg:"75%",xl:"85%" }}
+      ml={{ base: "1px", md: "14rem", lg: "13rem", xl: "15rem" }}
+      w={{ base: "100%", md: "75%",lg:"75%",xl:"85%" }}
     >
       <Heading
         // className="heading-color"
