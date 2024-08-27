@@ -96,7 +96,7 @@ export default function Contacts() {
               padding={"0.5rem"}
             >
               <Link
-                href={"9"}
+                href={"#9"}
                 id="contact-phone"
                 w={"full"}
                 display={"flex"}
