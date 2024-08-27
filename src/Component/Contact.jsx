@@ -96,7 +96,7 @@ export default function Contacts() {
               padding={"0.5rem"}
             >
               <Link
-                href={"920509896"}
+                href={"9"}
                 id="contact-phone"
                 w={"full"}
                 display={"flex"}
@@ -111,7 +111,7 @@ export default function Contacts() {
                 fontSize={{ base: "17px", md: "17px", lg: "15px" }}
                 color={"#718096"}
               >
-                +919205098967
+                
               </Text> */}
               </Link>
             </Stack>
